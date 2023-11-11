@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		7BD808ED2AFF6282003C442B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808EC2AFF6282003C442B /* AppDelegate.swift */; };
 		7BD808EF2AFF6282003C442B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808EE2AFF6282003C442B /* SceneDelegate.swift */; };
-		7BD808F12AFF6282003C442B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808F02AFF6282003C442B /* ViewController.swift */; };
+		7BD808F12AFF6282003C442B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808F02AFF6282003C442B /* MainViewController.swift */; };
 		7BD808F42AFF6282003C442B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD808F22AFF6282003C442B /* Main.storyboard */; };
 		7BD808F62AFF6283003C442B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD808F52AFF6283003C442B /* Assets.xcassets */; };
 		7BD808F92AFF6283003C442B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD808F72AFF6283003C442B /* LaunchScreen.storyboard */; };
+		7BD809062AFF76E4003C442B /* RickAndMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD809052AFF76E4003C442B /* RickAndMorty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BD808E92AFF6282003C442B /* JsonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD808EC2AFF6282003C442B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD808EE2AFF6282003C442B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BD808F02AFF6282003C442B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BD808F02AFF6282003C442B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7BD808F32AFF6282003C442B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BD808F52AFF6283003C442B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BD808F82AFF6283003C442B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BD808FA2AFF6283003C442B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD809052AFF76E4003C442B /* RickAndMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		7BD808EB2AFF6282003C442B /* JsonApp */ = {
 			isa = PBXGroup;
 			children = (
-				7BD808EC2AFF6282003C442B /* AppDelegate.swift */,
-				7BD808EE2AFF6282003C442B /* SceneDelegate.swift */,
-				7BD808F02AFF6282003C442B /* ViewController.swift */,
-				7BD808F22AFF6282003C442B /* Main.storyboard */,
-				7BD808F52AFF6283003C442B /* Assets.xcassets */,
-				7BD808F72AFF6283003C442B /* LaunchScreen.storyboard */,
-				7BD808FA2AFF6283003C442B /* Info.plist */,
+				7BD809042AFF6EF8003C442B /* Models */,
+				7BD809032AFF6EDE003C442B /* ViewControllers */,
+				7BD809022AFF6E69003C442B /* Storyboards */,
+				7BD809012AFF6E3C003C442B /* SupportingFiles */,
+				7BD809002AFF6DE2003C442B /* Resources */,
 			);
 			path = JsonApp;
+			sourceTree = "<group>";
+		};
+		7BD809002AFF6DE2003C442B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BD808F52AFF6283003C442B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7BD809012AFF6E3C003C442B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7BD808EE2AFF6282003C442B /* SceneDelegate.swift */,
+				7BD808EC2AFF6282003C442B /* AppDelegate.swift */,
+				7BD808FA2AFF6283003C442B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7BD809022AFF6E69003C442B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7BD808F72AFF6283003C442B /* LaunchScreen.storyboard */,
+				7BD808F22AFF6282003C442B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7BD809032AFF6EDE003C442B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BD808F02AFF6282003C442B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7BD809042AFF6EF8003C442B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BD809052AFF76E4003C442B /* RickAndMorty.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD808F12AFF6282003C442B /* ViewController.swift in Sources */,
+				7BD809062AFF76E4003C442B /* RickAndMorty.swift in Sources */,
+				7BD808F12AFF6282003C442B /* MainViewController.swift in Sources */,
 				7BD808ED2AFF6282003C442B /* AppDelegate.swift in Sources */,
 				7BD808EF2AFF6282003C442B /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonApp/Info.plist;
+				INFOPLIST_FILE = JsonApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tatya.JsonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonApp/Info.plist;
+				INFOPLIST_FILE = JsonApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,9 +380,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tatya.JsonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
