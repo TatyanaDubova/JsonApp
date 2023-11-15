@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TurkeyRickViewController: UIViewController {
+final class TurkeyRickViewController: UIViewController {
     
     private let networkManager = NetworkManager.shared
     
