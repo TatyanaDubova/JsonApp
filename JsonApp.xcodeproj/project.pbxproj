@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BC4BEF32B04D0730073BCEF /* TurkeyRickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4BEF22B04D0730073BCEF /* TurkeyRickViewController.swift */; };
+		7BC4BEF62B04D5250073BCEF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4BEF52B04D5250073BCEF /* NetworkManager.swift */; };
 		7BD808ED2AFF6282003C442B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808EC2AFF6282003C442B /* AppDelegate.swift */; };
 		7BD808EF2AFF6282003C442B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808EE2AFF6282003C442B /* SceneDelegate.swift */; };
 		7BD808F12AFF6282003C442B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD808F02AFF6282003C442B /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BC4BEF22B04D0730073BCEF /* TurkeyRickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyRickViewController.swift; sourceTree = "<group>"; };
+		7BC4BEF52B04D5250073BCEF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7BD808E92AFF6282003C442B /* JsonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD808EC2AFF6282003C442B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD808EE2AFF6282003C442B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BC4BEF42B04D50A0073BCEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7BC4BEF52B04D5250073BCEF /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7BD808E02AFF6282003C442B = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		7BD808EB2AFF6282003C442B /* JsonApp */ = {
 			isa = PBXGroup;
 			children = (
+				7BC4BEF42B04D50A0073BCEF /* Services */,
 				7BD809042AFF6EF8003C442B /* Models */,
 				7BD809032AFF6EDE003C442B /* ViewControllers */,
 				7BD809022AFF6E69003C442B /* Storyboards */,
@@ -98,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7BD808F02AFF6282003C442B /* MainViewController.swift */,
+				7BC4BEF22B04D0730073BCEF /* TurkeyRickViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC4BEF62B04D5250073BCEF /* NetworkManager.swift in Sources */,
 				7BD809062AFF76E4003C442B /* RickAndMorty.swift in Sources */,
 				7BD808F12AFF6282003C442B /* MainViewController.swift in Sources */,
 				7BD808ED2AFF6282003C442B /* AppDelegate.swift in Sources */,
+				7BC4BEF32B04D0730073BCEF /* TurkeyRickViewController.swift in Sources */,
 				7BD808EF2AFF6282003C442B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
